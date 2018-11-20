@@ -1,6 +1,7 @@
 require 'simplecov'
 SimpleCov.start 'rails'
 require 'database_cleaner'
+require 'web_helpers'
 
 RSpec.configure do |config|
 
