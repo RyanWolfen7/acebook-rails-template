@@ -1,33 +1,37 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/helpers/application_helper.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/controllers/posts_controller.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/helpers/user_helper.rb": [
         1,
+        null
+      ],
+      "/Users/muge/Projects/acebook-rails-template/app/controllers/posts_controller.rb": [
         1,
-        2,
-        null,
-        null,
-        1,
-        3,
-        3,
-        null,
-        null,
         1,
         3,
         null,
         null,
         1,
+        4,
+        4,
+        null,
         null,
         1,
-        3,
+        5,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
         null,
         null
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/controllers/application_controller.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -38,44 +42,66 @@
         null,
         null
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/models/post.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/controllers/user_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/muge/Projects/acebook-rails-template/app/models/post.rb": [
         1,
         null
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/models/application_record.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/channels/application_cable/channel.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/models/user.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/muge/Projects/acebook-rails-template/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/channels/application_cable/connection.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/muge/Projects/acebook-rails-template/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/jobs/application_job.rb": [
+      "/Users/muge/Projects/acebook-rails-template/app/channels/application_cable/channel.rb": [
         0,
-        0
-      ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/judithlloyd-jones/Desktop/Projects/acebook-rails-template/app/models/user.rb": [
         0,
         0,
         0
       ]
     },
-
-    "timestamp": 1542727966
+    "timestamp": 1542802734
   }
 }
