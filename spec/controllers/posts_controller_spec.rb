@@ -27,10 +27,18 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-  #   describe "GET /posts/:id/edit" do
-  #   it "update a post" do
-  #     post :update, params: { patch: { message: "World!" } }.to change(Post,:message).by("Hello, world!")
-  #     expect(Post.find_by(id: 1)).to be()
+  # describe "GET /edit" do
+  #   it "responds with 200" do
+  #     get :edit
+  #     expect(response).to have_http_status(200)
   #   end
   # end
+
+    # describe "GET /posts/:id/edit" do
+    #   it "update a post" do
+    #     seeded_post = Post.find_by(id: 1)
+    #     patch :update, params: { id: 1, message: "Goodbye, world!" }
+    #     expect(seeded_post.message).to be("Goodbye, world!")
+    #   end
+    # end
 end
