@@ -29,9 +29,8 @@ RSpec.describe PostsController, type: :controller do
 
   #   describe "GET /posts/:id/edit" do
   #   it "update a post" do
-  #     # post :create, params: { post: { message: "Hello, world!" } }
   #     post :update, params: { patch: { message: "World!" } }.to change(Post,:message).by("Hello, world!")
-  #     expect(Post.find_by(message: "World!")).to be
+  #     expect(Post.find_by(id: 1)).to be()
   #   end
   # end
 end

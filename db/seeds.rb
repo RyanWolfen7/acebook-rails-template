@@ -14,3 +14,11 @@ User.create(
     }
   ]
 )
+
+Post.create(
+  [
+    {
+      message: "Hello, world!" 
+    }
+  ]
+)

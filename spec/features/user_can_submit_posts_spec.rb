@@ -23,9 +23,8 @@ RSpec.feature "Timeline", type: :feature do
     click_link "New Post"
     fill_in "Message", with: "Hello! \n Goodbye!"
     click_button "Submit"
-    click_link "Delete"
+    page.click_link('Delete', :href => '/posts/6')
     expect(page).to_not have_content("Hello! \n Goodbye!")
-    expect(page).to_not have_content(Time.now.getutc)
   end
 
   scenario "Can edit posts with linebreak in them" do
@@ -33,7 +32,7 @@ RSpec.feature "Timeline", type: :feature do
     click_link "New Post"
     fill_in "Message", with: "Hello! \n Goodbye!"
     click_button "Submit"
-    click_link "Edit"
+    page.click_link('Edit', :href => '/posts/7/edit')
     fill_in "Message", with: "Ublaaaaaaa"
     click_button "Update"
     expect(page).to have_content("Ublaaaaaaa")
