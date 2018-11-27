@@ -1,7 +1,7 @@
 <p class="username"><%= @user.username %></p>
 
 <% @posts.reverse_each do |post| %>
-  <% if (post.id == @user.id) || (post.wall == @user.id) %>
+  <% if (post.user_id == @user.id) || (post.wall == @user.id) %>
       <div class="post">
         <ul class="caption"
           <p><%= post.message %></p>
