@@ -22,6 +22,7 @@
         <li class="active"><a href="#"><%= link_to "New Post", new_post_path %></a></li>
         <li class="active"><a href="#"><%= link_to "News Feed", '/posts' %></a></li>
         <li class="active"><a href="#"><%= link_to "My Wall", user_path(current_user) %></a></li>
+        <li class="active"><a href="#"><%= link_to "Themes", themes_path(current_user) %></a></li>
        <% end %>
 
     </ul>

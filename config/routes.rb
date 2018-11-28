@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete 'sessions/:id', to: 'sessions#destroy'
 
   resources :sessions
+  resources :themes
   resources :posts
   resources :users
   devise_for :users
