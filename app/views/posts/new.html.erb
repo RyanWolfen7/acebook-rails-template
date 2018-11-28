@@ -1,8 +1,12 @@
-<%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
-  <div style="display: none;">
-  <%= form.text_field :wall, :value => current_user.id %>
-  </div>
-  <%= form.submit "Submit" %>
+<% if current_user != nil %>
+
+  <%= form_for @post do |form| %>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+    <div style="display: none;">
+    <%= form.text_field :wall, :value => current_user.id %>
+    </div>
+    <%= form.submit "Submit" %>
+  <% end %>
+
 <% end %>
