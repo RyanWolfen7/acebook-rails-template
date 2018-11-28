@@ -1,6 +1,10 @@
-<%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
+<% if current_user != nil %>
 
-  <%= form.submit "Submit" %>
+  <%= form_for @post do |form| %>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+
+    <%= form.submit "Submit" %>
+  <% end %>
+
 <% end %>
