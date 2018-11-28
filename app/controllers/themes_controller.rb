@@ -1,12 +1,22 @@
 class ThemesController < ApplicationController
 
+  def new
+    @theme = Theme.new
+  end
+
   def index
-    session[:colours] = @colour
+    @theme = Theme.new
+    session[:colour] = @theme
     p "-- Is this working? --"
-    p session[:colours]
-    p @colour
+    p session[:colour]
+    p @theme
     p "-- Is this working? --"
   end
 
+  private
+
+  def post_params
+    params.require(:theme).permit(:colour)
+  end
 
 end

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'users/:id', to: 'users#show', as: 'user'
   get 'posts/index', to: 'posts#index'
   get 'posts/:id/edit', to: 'posts#edit'
-  get 'themes.:id', to: 'themes#index'
+  get 'themes.:id', to: 'themes#new'
   patch 'posts/:id', to: 'posts#update'
   delete 'posts/:id', to: 'posts#delete'
   delete 'sessions/:id', to: 'sessions#destroy'
