@@ -7,7 +7,6 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     @post.update('user_id' => session[:user_id].to_s )
-
     redirect_to posts_url
   end
 
