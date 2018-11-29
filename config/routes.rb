@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :sessions
   resources :posts
-  resources :users
+  resources :users 
   devise_for :users
   get '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
   resources :users, only: [:show]
