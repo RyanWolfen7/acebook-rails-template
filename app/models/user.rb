@@ -10,4 +10,8 @@ class User < ApplicationRecord
   validates :password, presence: true
   has_many :posts
   has_secure_password
+
+
+  extend FriendlyId
+  friendly_id :username, use: :slugged
 end
