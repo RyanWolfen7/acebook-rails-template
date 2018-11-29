@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   delete 'sessions/:id', to: 'sessions#destroy'
   root 'themes#index'
   root 'comments#new'
+  
 
   resources :sessions
   resources :comments

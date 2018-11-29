@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @user = User.friendly.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     @comments = Comment.all
   end
 
