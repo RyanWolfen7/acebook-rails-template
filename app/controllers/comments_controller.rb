@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create(post_params)
-    redirect_to post_url
+    redirect_to post_url(params[:id])
   end
 
   private

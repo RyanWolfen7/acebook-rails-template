@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'users/:id/show_post', to: 'users#show_post'
   get 'posts/index', to: 'posts#index'
   get 'posts/:id/edit', to: 'posts#edit'
+  get 'posts/:id/show', to: 'posts#show'
   patch 'posts/:id', to: 'posts#update'
   delete 'posts/:id', to: 'posts#delete'
   delete 'sessions/:id', to: 'sessions#destroy'
