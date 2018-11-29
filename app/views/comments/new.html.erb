@@ -1,8 +1,8 @@
 
 
   <%= form_for @comment do |form| %>
-    <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
     <div style="display: none;">
       <%= form.text_field :user_id, :value => current_user.id %>
     </div>

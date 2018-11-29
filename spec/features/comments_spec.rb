@@ -7,7 +7,7 @@ RSpec.feature "Commenting Son!", type: :feature do
       signup
       click_link "News Feed"
       click_link "Comment"
-      fill_in "comment", with: "Comment Son"
+      fill_in "message", with: "Comment Son"
       click_button "Submit"
       expect(page).to have_content("Comment Son")
     end
