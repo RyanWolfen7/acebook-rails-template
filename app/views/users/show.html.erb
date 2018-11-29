@@ -1,3 +1,10 @@
+
+<style>
+  body { background-color: <%= session[:colour] %>; font-family: <%= session[:font] %>;}
+</style>
+
+<h1><p class="username"><%= @user.username %>'s Wall</p></h1>
+
 <% if current_user != nil %>
 
   <p class="username"><%= @user.username %>'s Wall</p>
@@ -10,22 +17,19 @@
     </div>
     <%= form.submit "Submit" %>
   <% end %>
-
-
-  <% @posts.reverse_each do |post| %>
-    <% if post.wall == @user.id %>
-        <div class="post">
-          <ul class="caption"
-            <p><%= post.message %></p>
-            <p><%= post.created_at %></p>
-            <p><%= post.user.username %></p>
-            <% if post.user_id == session[:user_id] %>
-              <%= link_to 'Edit', edit_post_path(post.id) %>
-              <%= link_to 'Delete', post_path(post.id), method: :delete %>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
-  <% end %>
-  
+<% @posts.reverse_each do |post| %>
+  <% if (post.user_id == @user.id) || (post.wall == @user.id) %>
+      <div class="post">
+        <ul class="caption"
+          <p><%= post.message %></p>
+          <p><%= post.created_at %></p>
+          <p><%= post.user.username %></p>
+          <% if post.user_id == session[:user_id] %>
+            <%= link_to 'Edit', edit_post_path(post.id) %>
+            <%= link_to 'Delete', post_path(post.id), method: :delete %>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+<% end %>
 <% end %>

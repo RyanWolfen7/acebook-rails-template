@@ -1,0 +1,53 @@
+<h1>Choose the theme for your wall</h1>
+
+<%= form_tag do %>
+<h3>Background colours</h3>
+  <%= select_tag :colour,
+  "<option>Pink</option>
+  <option>LightSalmon</option>
+  <option>DarkSalmon</option>
+  <option>Crimson</option>
+  <option>OrangeRed</option>
+  <option>Coral</option>
+  <option>Orange</option>
+  <option>LemonChiffon</option>
+  <option>Khaki</option>
+  <option>OliveDrab</option>
+  <option>YellowGreen</option>
+  <option>SpringGreen</option>
+  <option>LightCyan</option>
+  <option>Turquoise</option>
+  <option>PowderBlue</option>
+  <option>SkyBlue</option>
+  <option>NavajoWhite</option>
+  <option>Cornsilk</option>
+  <option>Sienna</option>
+  <option>DodgerBlue</option>"
+  .html_safe, multiple: false
+  %>
+  <h3>Fonts</h3>
+  <%= select_tag :font,
+  "<option>Times</option>
+  <option>Times New Roman</option>
+  <option>Fantasy</option>
+  <option>American Typewriter</option>
+  <option>Courier New</option>
+  <option>Comic Sans MS</option>
+  <option>Luminari</option>
+  <option>Chalkduster</option>
+  <option>Arial</option>
+  <option>Arial Black</option>
+  <option>Impact</option>
+  <option>Optima</option>
+  <option>Symbol</option>
+  <option>Trattatello</option>
+  <option>Stencil Std</option>
+  <option>Zapf Dingbats</option>
+  <option>Hoefler Text</option>
+  <option>Charcoal</option>
+  <option>Textile</option>
+  <option>Hoefler Text Ornaments</option>"
+  .html_safe, multiple: false
+  %>
+  <%= submit_tag("Submit") %>
+<% end %>
