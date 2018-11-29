@@ -8,11 +8,13 @@ Rails.application.routes.draw do
   delete 'posts/:id', to: 'posts#delete'
   delete 'sessions/:id', to: 'sessions#destroy'
   root 'themes#index'
+  root 'comments#new'
 
   resources :sessions
+  resources :comments
   resources :themes
   resources :posts
-  resources :users 
+  resources :users
   devise_for :users
   get '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
   resources :users, only: [:show]
