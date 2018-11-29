@@ -12,6 +12,8 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    session[:colour] = nil
+    session[:font] = nil
     redirect_to '/', notice: 'Logged out!'
   end
 end

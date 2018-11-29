@@ -1,8 +1,8 @@
 <style>
-  body { background-color: blue; }
+  body { background-color: <%= session[:colour] %>; font-family: <%= session[:font] %>;}
 </style>
 
-<p class="username"><%= @user.username %>'s Wall</p>
+<h1><p class="username"><%= @user.username %>'s Wall</p></h1>
 
 <% @posts.reverse_each do |post| %>
   <% if (post.user_id == @user.id) || (post.wall == @user.id) %>

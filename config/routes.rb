@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   patch 'posts/:id', to: 'posts#update'
   delete 'posts/:id', to: 'posts#delete'
   delete 'sessions/:id', to: 'sessions#destroy'
+  root 'themes#index'
 
   resources :sessions
   resources :themes
