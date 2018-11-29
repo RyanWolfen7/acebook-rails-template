@@ -1,0 +1,10 @@
+
+
+  <%= form_for @comment do |form| %>
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+    <div style="display: none;">
+      <%= form.text_field :user_id, :value => current_user.id %>
+    </div>
+    <%= form.submit "Submit" %>
+  <% end %>
