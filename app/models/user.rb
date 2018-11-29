@@ -2,6 +2,7 @@ require 'bcrypt'
 
 # User class
 class User < ApplicationRecord
+  acts_as_voter
   include BCrypt
   validates :firstname, presence: true
   validates :lastname, presence: true

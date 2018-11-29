@@ -11,6 +11,13 @@
       <% if post.user_id == session[:user_id] %>
         <%= link_to 'Edit', edit_post_path(post.id) %>
         <%= link_to 'Delete', post_path(post.id), method: :delete %>
+      <% else %>
+        <%= link_to like_post_path(post), class:"like", method: :put do %>
+          <button type="button" class="btn btn-info" arai-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+            <span class="badge"><%= post.get_likes.size %></span>
+          </button>
+        <% end %>
       <% end %>
     </ul>
   </div>

@@ -30,6 +30,14 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def like
+    @post.like_from current_user
+  end
+
+  def unlike
+    @post.unlike_from current_user
+  end
+
   private
 
   def post_params

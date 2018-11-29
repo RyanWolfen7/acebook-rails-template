@@ -9,10 +9,16 @@ Rails.application.routes.draw do
   delete 'sessions/:id', to: 'sessions#destroy'
   root 'themes#index'
 
+  resources :posts do
+    member do
+      put "like" => "post#like"
+      put "unlike" => "post#unlike"
+    end
+  end
+  
   resources :sessions
   resources :themes
-  resources :posts
-  resources :users 
+  resources :users
   devise_for :users
   get '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
   resources :users, only: [:show]
