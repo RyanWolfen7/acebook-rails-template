@@ -1,11 +1,10 @@
+<% if current_user != nil %>
 
 <style>
   body { background-color: <%= session[:colour] %>; font-family: <%= session[:font] %>;}
 </style>
 
 <h1><p class="username"><%= @user.username %>'s Wall</p></h1>
-
-<% if current_user != nil %>
 
   <p class="username"><%= @user.username %>'s Wall</p>
 
