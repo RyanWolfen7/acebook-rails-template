@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/', to: 'users#new'
   get 'users/:id', to: 'users#show', as: 'user'
+  get 'users/:id/show_post', to: 'users#show_post'
   get 'posts/index', to: 'posts#index'
   get 'posts/:id/edit', to: 'posts#edit'
   patch 'posts/:id', to: 'posts#update'
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
   resources :sessions
   resources :themes
   resources :posts
-  resources :users
+  resources :users 
   devise_for :users
   get '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
   resources :users, only: [:show]

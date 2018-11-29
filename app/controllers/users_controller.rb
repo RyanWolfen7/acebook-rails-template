@@ -21,13 +21,26 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.friendly.find(params[:id])
     @posts = Post.all
+  end
+
+  def show_post
+    @user = User.find(params[:id])
+    @post = Post.new
+    @post = Post.create(message_params)
+    @post.update("wall" => params[:id].to_i)
+    @post.update("user_id" => session[:id].to_s)
+    redirect_to user_path(params[:id])
   end
 
   private
 
   def post_params
     params.require(:user).permit(:firstname, :lastname, :username, :email, :password)
+  end
+
+  def message_params
+    params.require(:post).permit(:message, session[:user_id])
   end
 end
