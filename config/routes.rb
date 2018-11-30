@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   patch 'posts/:id', to: 'posts#update'
   delete 'posts/:id', to: 'posts#delete'
   delete 'sessions/:id', to: 'sessions#destroy'
+  get 'comments/:id/new', to: 'comments#new'
   root 'themes#index'
-  root 'comments#new'
-
+  # root 'comments#new'
+# '/comments/new/' + (post.id.to_s)
   resources :sessions
   resources :comments
   resources :themes
