@@ -10,14 +10,10 @@ Rails.application.routes.draw do
   delete 'sessions/:id', to: 'sessions#destroy'
   get 'comments/:id/new', to: 'comments#new'
   root 'themes#index'
-<<<<<<< HEAD
-  root 'comments#new'
-  
 
-=======
   # root 'comments#new'
 # '/comments/new/' + (post.id.to_s)
->>>>>>> bb5afad30919f65db36d54c790d2bdc86fcee632
+
   resources :sessions
   resources :comments
   resources :themes
