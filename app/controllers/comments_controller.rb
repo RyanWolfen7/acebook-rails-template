@@ -2,6 +2,9 @@ class CommentsController < ApplicationController
 
   def new
     @comment = Comment.new
+    p params
+    p 'the format is:'
+    p request.format.to_str
   end
 
   def create
