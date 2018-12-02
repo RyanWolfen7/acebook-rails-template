@@ -37,3 +37,17 @@ Our App is currently being hosted on Heroku and can be accessed with the followi
 ```
 
 Sign-up using your First Name, Last Name, Username, E-mail and Password and you will have access to the posts functionality.
+
+## Project Overview
+
+This project is a colaborative group effort to create a functioning 'Facebook clone' using Ruby on Rails. The intention was for the group to learn and utilize both Ruby on Rails to create the project and Agile development processes to work as a team.
+
+### Modeling
+
+The project was expanded on over a two week period. Starting with the easiest aspects to implement: The ability to write and post a message, before adding more and more functionality as it became necissary. 
+
+We used WaffleBoard, integrated with Github to manage the project team's workflow and co-ordinate tasks.
+
+### Deployment
+
+This project utilizes Travis CI for automated build integration and ease of testing, and is deployed on Heroku (see section above).
