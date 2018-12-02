@@ -44,7 +44,7 @@ This project is a colaborative group effort to create a functioning 'Facebook cl
 
 ### Modeling
 
-The project was expanded on over a two week period. Starting with the easiest aspects to implement: The ability to write and post a message, before adding more and more functionality as it became necissary. 
+The project was expanded on over a two week period. Starting with the easiest aspects to implement: The ability to write and post a message, before adding more and more functionality as it became necessary. 
 
 We used WaffleBoard, integrated with Github to manage the project team's workflow and co-ordinate tasks.
 
